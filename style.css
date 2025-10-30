@@ -1,0 +1,633 @@
+/* Import IM Fell English fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap');
+
+body {
+  background: url("homepageback.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'IM Fell English', serif;
+}
+
+.titleft{
+  float: left;
+  width: 15%;
+  margin-top: 50px;
+}
+
+.titright{
+  float: right;
+  width: 15%;
+  margin-top: 50px;
+}
+
+.flip-horizontally {
+  transform: scaleX(-1);
+}
+
+.title {
+  float: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-family: 'IM Fell English SC', serif;
+  font-size: 32pt;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding: 20px;
+  background-image: url("title cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid;
+  border-color: white;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.left {
+  float: left;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  width: 17%;
+  margin-top: 0px;
+  margin-left: 75px;
+}
+.asuka{
+  background-image: url("ezgif-7-12083fe516.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid;
+  border-color: CornflowerBlue;
+  height: 350px;
+  font-family: 'IM Fell English', serif;
+  color: white;
+  margin-top: 25px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+.intro{
+  background-image: url("photo-1641895958846-19dab3471449.jpg");
+  padding: 15px;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  text-align: center;
+  background-size: 100%;
+  background-repeat: repeat;
+  border: solid;
+  border-color: blue;
+  color: white;
+  font-family: 'IM Fell English', serif;
+}
+
+.bio{
+  background-image: url("photo-1641895958846-19dab3471449.jpg");
+  padding: 15px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  text-align: center;
+  background-size: 100%;
+  background-repeat: repeat;
+  border: solid;
+  border-color: blue;
+  color: white;
+  font-family: 'IM Fell English', serif;
+}
+
+.right {
+  float: right;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  width: 17%;
+  margin-top: 0px;
+  margin-right: 75px;
+}
+
+.right .twtlinks{
+  background-image: url("asdsadsada.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid;
+  border-color: purple;
+  height: 350px;
+  font-family: 'IM Fell English', serif;
+  color: white;
+  margin-top: 25px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.links{
+  margin-top: 75px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  background-image: url("darkenedddd.png");
+  background-size: cover;
+  background-repeat: repeat;
+  border: solid;
+  border-color: brown;
+  height: 364px;
+  color: white;
+  text-align: center;
+  font-family: 'IM Fell English', serif;
+}
+
+.overlay{
+  display: block; 
+  width: 100%;
+  height: 100%;
+}
+
+.articles1{
+  background-color:white;
+  padding: 15px;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  text-align: center;
+  background-size: 100%;
+  background-repeat: repeat;
+  border: solid;
+  border-color: black;
+  color: black;
+  font-size: 12pt;
+  line-height:1.5;
+  font-family: 'IM Fell English', serif;
+}
+.articles2{
+  background-color:white;
+  padding: 15px;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  text-align: center;
+  background-size: 100%;
+  background-repeat: repeat;
+  border: solid;
+  border-color: black;
+  color: black;
+  font-size: 12pt;
+  line-height:1.5;
+  font-family: 'IM Fell English', serif;
+}
+.center {
+padding: 125px 0;
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: Gainsboro;
+  background-color: transparent;
+  text-decoration: underline;
+}
+/* Q&A Section Styling */
+.qa-container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #ffffff88;
+  border-radius: 12px;
+  font-family: 'IM Fell English', serif;
+  color: white;
+  padding: 20px;
+  backdrop-filter: blur(3px);
+}
+
+.qa-header h1, .qa-header p,
+label, .tab, .tool-btn, .submit-btn {
+  font-family: 'IM Fell English', serif;
+  color: white;
+  text-shadow: 0 0 3px black;
+}
+
+.tabs {
+  display: flex;
+  margin-top: 10px;
+  border-bottom: 1px solid white;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-bottom: 2px solid transparent;
+  font-family: 'IM Fell English', serif;
+}
+
+.tab.active {
+  border-bottom: 2px solid white;
+  font-weight: bold;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+textarea {
+  background: rgba(255,255,255,0.1);
+  color: white;
+  border: 1px solid white;
+  font-family: 'IM Fell English', serif;
+}
+
+.submit-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid white;
+  font-family: 'IM Fell English', serif;
+}
+
+.submit-btn:hover {
+  background: white;
+  color: black;
+}
+
+.canvas-tools,
+.canvas-container {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid white;
+}
+
+.tool-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  color: white;
+  font-family: 'IM Fell English', serif;
+}
+
+.tool-btn.active {
+  background: white;
+  color: black;
+}
+
+.success-message {
+  display: none;
+  background: rgba(0, 128, 0, 0.4);
+  border: 1px solid #0f0;
+  color: #cfc;
+  text-shadow: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'IM Fell English', serif;
+}
+
+.admin-link {
+  display: block;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  padding: 8px 12px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  font-size: 0.9em;
+  text-decoration: none;
+  color: white;
+  font-family: 'IM Fell English', serif;
+}
+
+.admin-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-decoration: none;
+}
+
+.imagescroll {
+  height: 819px;
+  background-image: url("photo-1641895958846-19dab3471449.jpg");
+  background-size: cover;
+  margin-top: 25px;
+  background-repeat: no-repeat;
+  border: solid;
+  border-color: CornflowerBlue;
+  overflow: hidden;
+}
+
+.scroll-container {
+  height: 100%;
+  overflow: hidden;
+}
+
+.scroll-content {
+  animation: scroll-down 30s linear infinite;
+}
+
+.scroll-content img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  vertical-align: top;
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+.admin-tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #333;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  background: #2a2a2a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 2px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: all 0.3s ease;
+  font-family: 'IM Fell English', serif;
+}
+
+.tab-btn:hover {
+  background: #404040;
+}
+
+.tab-btn.active {
+  background: #4a4a4a;
+  border-bottom: 2px solid #007bff;
+}
+
+/* Tab Content */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Hall of Fame Button */
+.halloffame-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.3s ease;
+  font-family: 'IM Fell English', serif;
+}
+
+.halloffame-btn:hover {
+  background: #218838;
+  transform: translateY(-1px);
+}
+
+.halloffame-btn:active {
+  transform: translateY(0);
+}
+
+/* Enhanced submission item styling */
+.submission-item {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px;
+  transition: all 0.3s ease;
+  font-family: 'IM Fell English', serif;
+}
+
+.submission-item:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+.submission-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.submission-type {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'IM Fell English', serif;
+}
+
+.submission-type.question {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.submission-type.drawing {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.submission-timestamp {
+  font-size: 12px;
+  color: #6c757d;
+  margin-right: 10px;
+  font-family: 'IM Fell English', serif;
+}
+
+/* Button group styling */
+.submission-header > div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.3s ease;
+  font-family: 'IM Fell English', serif;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+  transform: translateY(-1px);
+}
+
+.delete-btn:active {
+  transform: translateY(0);
+}
+
+/* Drawing display improvements */
+.submission-drawing {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.submission-drawing img {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.submission-text {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  border-left: 4px solid #007bff;
+  margin-top: 10px;
+  font-style: italic;
+  font-family: 'IM Fell English', serif;
+}
+
+/* No submissions message */
+.no-submissions {
+  text-align: center;
+  color: #6c757d;
+  font-style: italic;
+  padding: 40px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px dashed #dee2e6;
+  font-family: 'IM Fell English', serif;
+}
+
+/* Submissions count styling */
+.submissions-count {
+  font-size: 14px;
+  color: #6c757d;
+  margin-left: 10px;
+  font-family: 'IM Fell English', serif;
+}
+
+/* Enhanced clear and logout buttons */
+.clear-btn, .logout-btn {
+  transition: all 0.3s ease;
+  font-family: 'IM Fell English', serif;
+}
+
+.clear-btn:hover, .logout-btn:hover {
+  transform: translateY(-1px);
+}
+
+.clear-btn:active, .logout-btn:active {
+  transform: translateY(0);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .submission-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .submission-header > div:last-child {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .admin-tabs {
+    flex-direction: column;
+  }
+  
+  .tab-btn {
+    margin-right: 0;
+    margin-bottom: 2px;
+    border-radius: 5px;
+  }
+}
+
+.halloffame {
+  background-image: url("photo-1641895958846-19dab3471449.jpg");
+  padding: 15px;
+  width: 50%;
+  margin: 100px auto;
+  text-align: center;
+  background-size: 100%;
+  background-repeat: repeat;
+  border: solid;
+  border-color: blue;
+  color: white;
+  font-family: 'IM Fell English', serif;
+}
+
+.halloffame-header h1, .halloffame-header p {
+  color: white;
+  text-shadow: 0 0 3px black;
+  margin-bottom: 10px;
+  font-family: 'IM Fell English', serif;
+}
+
+.halloffame-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.halloffame-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  backdrop-filter: blur(3px);
+  font-family: 'Times New Roman', serif;
+}
+
+.halloffame-drawing {
+  max-width: 100%;
+  border: 1px solid white;
+  margin-bottom: 10px;
+}
+
+.halloffame-text {
+  font-style: italic;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', serif;
+}
+
+.halloffame-meta {
+  font-size: 12px;
+  opacity: 0.8;
+  font-family: 'Times New Roman', serif;
+}
