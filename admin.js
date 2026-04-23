@@ -374,9 +374,8 @@ createQuestionImage(questionText) {
       const textAreaWidth = textAreaRight - textAreaLeft;
       const textAreaHeight = textAreaBottom - textAreaTop;
       
-      // Text styling - white text with IM Fell English font
+      // Text styling with IM Fell English font
       ctx.font = 'bold 28px "IM Fell English", serif';
-      ctx.fillStyle = 'white';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       
@@ -411,16 +410,38 @@ createQuestionImage(questionText) {
       const textBoxCenterY = (textAreaTop + textAreaBottom) / 2;
       const startY = textBoxCenterY - (totalTextHeight / 2) + (lineHeight / 2);
       
-      // Draw text shadow
-      ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
+      // Function to render a single line with greentext formatting
+      const renderLineWithGreentext = (line, x, y, isShadow = false) => {
+        // Check if line starts with > for greentext
+        if (line.startsWith('>')) {
+          // Draw shadow first if needed
+          if (isShadow) {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
+            ctx.fillText(line, x + shadowOffsetX, y + shadowOffsetY);
+          }
+          // Draw greentext
+          ctx.fillStyle = '#789922'; // Classic 4chan greentext color
+          ctx.fillText(line, x, y);
+        } else {
+          // Draw shadow first if needed
+          if (isShadow) {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
+            ctx.fillText(line, x + shadowOffsetX, y + shadowOffsetY);
+          }
+          // Draw normal white text
+          ctx.fillStyle = 'white';
+          ctx.fillText(line, x, y);
+        }
+      };
+      
+      // Draw text shadow for all lines
       lines.forEach((line, index) => {
-        ctx.fillText(line, textBoxCenterX + shadowOffsetX, startY + (index * lineHeight) + shadowOffsetY);
+        renderLineWithGreentext(line, textBoxCenterX, startY + (index * lineHeight), true);
       });
       
-      // Draw main text in white
-      ctx.fillStyle = 'white';
+      // Draw main text with greentext formatting
       lines.forEach((line, index) => {
-        ctx.fillText(line, textBoxCenterX, startY + (index * lineHeight));
+        renderLineWithGreentext(line, textBoxCenterX, startY + (index * lineHeight), false);
       });
       
       // Add site branding at bottom with IM Fell English font

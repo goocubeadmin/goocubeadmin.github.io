@@ -369,6 +369,36 @@ if (questionForm) {
   });
 }
 
+// Add Enter key line break functionality to question input
+const questionInput = document.getElementById('question');
+if (questionInput) {
+  questionInput.addEventListener('keydown', (e) => {
+    // Allow Enter key to create line breaks, but submit with Ctrl+Enter or Cmd+Enter
+    if (e.key === 'Enter') {
+      if (e.ctrlKey || e.metaKey) {
+        // Submit form with Ctrl+Enter or Cmd+Enter
+        e.preventDefault();
+        const form = questionInput.form;
+        if (form) {
+          form.dispatchEvent(new Event('submit'));
+        }
+      } else {
+        // Create line break with Enter key
+        e.preventDefault();
+        const start = questionInput.selectionStart;
+        const end = questionInput.selectionEnd;
+        const value = questionInput.value;
+        
+        // Insert line break at cursor position
+        questionInput.value = value.substring(0, start) + '\n' + value.substring(end);
+        
+        // Move cursor to after the line break
+        questionInput.selectionStart = questionInput.selectionEnd = start + 1;
+      }
+    }
+  });
+}
+
 // Drawing form submission
 const drawingForm = document.getElementById('drawingForm');
 if (drawingForm) {
